@@ -1,87 +1,90 @@
 <!DOCTYPE html>
 <html lang="ca">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Creació Digital</title>
-</head>
-<body>
-    <nav>
-        <div>
-            <a href="#">Creació Digital</a>
-            <button type="button">
-                <span></span>
-            </button>
-            <div>
-                <ul>
-                    <li><a href="#serveis">Serveis</a></li>
-                    <li><a href="#projectes">Projectes</a></li>
-                    <li><a href="#contacte">Contacte</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-
-    <header>
-        <h1>CreacióDigital</h1>
-        <p>Desenvolupem solucions digitals innovadores</p>
-    </header>
-
-    <section id="serveis">
-        <h2>Els nostres serveis mantinguts</h2>
-        <div>
-            <div>
-                <h4>Disseny Web</h4>
-                <p>Creem webs modernes i atractives amb les últimes tecnologies.</p>
-            </div>
-            <div>
-                <h4>Desenvolupament d'Apps</h4>
-                <p>Aplicacions a mida per a dispositius mòbils i ordinadors.</p>
-            </div>
-            <div>
-                <h4>Marketing Digital</h4>
-                <p>Estratègies digitals per a potenciar el teu negoci.</p>
-            </div>
-        </div>
-    </section>
-
-    <section id="projectes">
-        <div>
-            <h2>Projectes Recents</h2>
-            <div>
-                <div>
-                    <img src="https://via.placeholder.com/500x300" alt="Projecte 1">
-                    <h4>Projecte 1</h4>
-                </div>
-                <div>
-                    <img src="https://via.placeholder.com/500x300" alt="Projecte 2">
-                    <h4>Projecte 2</h4>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Creació Digital</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand" href="#">Creació Digital</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="#serveis">Serveis</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#projectes">Projectes</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contacte">Contacte</a></li>
+                    </ul>
                 </div>
             </div>
-        </div>
-    </section>
+        </nav>
 
-    <section id="contacte">
-        <h2>Contacta'ns</h2>
-        <form>
-            <div>
-                <label>Nom</label>
-                <input type="text" required>
-            </div>
-            <div>
-                <label>Correu Electrònic</label>
-                <input type="email" required>
-            </div>
-            <div>
-                <label>Missatge</label>
-                <textarea rows="4" required></textarea>
-            </div>
-            <button type="submit">Enviar</button>
-        </form>
-    </section>
+        <header class="bg-primary text-white text-center py-5">
+            <h1>CreacióDigital</h1>
+            <p>Desenvolupem solucions digitals innovadores</p>
+        </header>
 
-    <footer>
-        &copy; 2025 Creació Digital - Tots els drets reservats
-    </footer>
-</body>
+        <section id="serveis" class="container my-5">
+            <h2 class="text-center">Els nostres serveis mantinguts</h2>
+            <div class="row text-center mt-4">
+                <div class="col-md-4">
+                    <h4>Disseny Web</h4>
+                    <p>Creem webs modernes i atractives amb les últimes tecnologies.</p>
+                </div>
+                <div class="col-md-4">
+                    <h4>Desenvolupament d'Apps</h4>
+                    <p>Aplicacions a mida per a dispositius mòbils i ordinadors.</p>
+                </div>
+                <div class="col-md-4">
+                    <h4>Marketing Digital</h4>
+                    <p>Estratègies digitals per a potenciar el teu negoci.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="projectes" class="bg-light py-5">
+            <div class="container">
+                <h2 class="text-center">Projectes Recents</h2>
+                <div class="row mt-4">
+                    <div class="col-md-6">
+                        <img src="https://via.placeholder.com/500x300" class="img-fluid" alt="Projecte 1">
+                        <h4 class="mt-2">Projecte 1</h4>
+                    </div>
+                    <div class="col-md-6">
+                        <img src="https://via.placeholder.com/500x300" class="img-fluid" alt="Projecte 2">
+                        <h4 class="mt-2">Projecte 2</h4>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contacte" class="container my-5">
+            <h2 class="text-center">Contacta'ns</h2>
+            <form class="mt-4">
+                <div class="mb-3">
+                    <label class="form-label">Nom</label>
+                    <input type="text" class="form-control" required>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Correu Electrònic</label>
+                    <input type="email" class="form-control" required>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Missatge</label>
+                    <textarea class="form-control" rows="4" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Enviar</button>
+            </form>
+        </section>
+
+        <footer class="bg-dark text-white text-center py-3">
+            &copy; 2025 Creació Digital - Tots els drets reservats
+        </footer>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    </body>
 </html>
